@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+     margin-top: 1rem;
+    }
+
+ .attribution a {
+color: hsl(228, 45%, 44%);
+ }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+
+}
+
+img{
+     max-width: 100%;
+}
+
+body {
+        background-color:  hsl(30, 38%, 92%) ;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: calc(100vh - 0.1px);
+        margin: 0 1.5rem;
+}
+
+h1{
+    color: hsl(212, 21%, 14%);
+}
+
+h1, .sold {
+    font-family: "Fraunces",sans-serif;
+}
+
+.koulesh h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.koulesh p{
+ margin-bottom: 2rem;
+}
+
+.koulesh ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.sold{
+    font-size: 2rem;
+    font-family: "Fraunces",sans-serif;
+    margin-right: 1.5rem;
+}
+
+.sold{
+    color:hsl(228, 12%, 48%);
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+p{
+    color: hsl(228, 12%, 48%);
+    line-height: 1.8;
+
+}
+
+button,li {
+    font-family: inherit;
+}
+
+.koulesh .btn{
+        font-size: 1rem;
+        font-weight: 700;
+        background-color:  hsl(158, 36%, 37%);
+        color:#fff;
+        width: 100%;
+        padding: 1rem 2rem;
+        border: none;
+        outline: none;        
+        border-radius: 0.625rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        cursor: pointer;
+        transition: 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.koulesh .btn .img {
+margin-right: 0.5rem;
+
+}
+
+.koulesh .btn:hover {
+    background-color: hsl(157, 35%, 16%) ;
+}
+
+.koulesh ul li:first-child{
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.koulesh ul li:nth-child(2){
+    color: hsl(228, 12%, 48%);
+     margin-left: 1.5rem; 
+}
+
+.koulesh article:first-child img{
+    border-radius: 1rem 1rem 0 0;
+
+
+} 
+
+
+.koulesh article:last-child {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius:0 0 1rem 1rem;
+    margin-top: -1rem;
+
+}
+
+.koulesh {
+    max-width: 600px;
+
+}
+
+@media (min-width: 640px){
+    .koulesh {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .koulesh article:first-child img{
+        border-radius: 0.625rem 0 0 0.625rem;
+        width: 100%;
+    }
+    .koulesh article:last-child {
+        border-radius: 0 0.625rem 0.625rem 0;
+        margin-top: 0;
+        padding: 1.5rem 1.5rem 0;
+    }
+
+    .koulesh p{
+        margin-bottom: 1rem;
+    }
+
+    picture img {
+        height: 100%;
+    }
+}
